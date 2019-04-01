@@ -46,7 +46,6 @@ int read_i_string_from_file(const char* full_name, int i, char* out_str, int max
         for(int i =1; i<max_size; i++) {
                 out_str[i]=fgetc(file1);
                 if(out_str[i]=='\n'){
-                //      printf("peedor");
                         out_str[i]='\0';
                         return i;
                 }
